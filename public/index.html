@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDKs -->
+    <script type="module" src="../firebase-app.js"></script>
+    <script type="module" src="../firebase-auth.js"></script>
+    <script type="module" src="../firebase-database.js"></script>
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <!-- Login/Signup -->
+    <div id="auth-container">
+        <h2>Login / Sign Up</h2>
+        <input type="email" id="auth-email" placeholder="Email" required>
+        <input type="password" id="auth-password" placeholder="Password" required>
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Chatroom Creation -->
+    <div id="chatroom-create-container" style="display:none;">
+        <h2>Create a Chatroom</h2>
+        <input type="text" id="chatroom-name" placeholder="Chatroom Name">
+        <button id="create-chatroom-btn">Create Chatroom</button>
+    </div>
+
+    <!-- Chatroom List -->
+    <div id="chatroom-list-container" style="display:none;">
+        <h2>Chatrooms</h2>
+        <ul id="chatroom-list"></ul>
+    </div>
+
+    <!-- Chatroom Messages -->
+    <div id="chatroom-container" style="display:none;">
+        <h2 id="chatroom-title"></h2>
+        <div id="chat-window"></div>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+</body>
+</html>

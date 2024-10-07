@@ -9,7 +9,7 @@ body {
     background-color: #f0f0f0;
 }
 
-#login-container, #chat-container {
+#login-container, #signup-container, #chat-container {
     width: 300px;
     padding: 20px;
     background-color: white;
